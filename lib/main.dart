@@ -14,6 +14,21 @@ class SplashPage extends StatelessWidget {
       children: [
         Container(
           color: mainThemeColor,
+        ),
+        Align(
+          alignment: Alignment.center,
+          child: Icon(
+            Icons.pool,
+            color: Colors.white,
+            size: 80,
+          ),
+        ),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: LinearProgressIndicator(
+            valueColor:
+                AlwaysStoppedAnimation<Color>(Colors.white.withOpacity(0.4)),
+          ),
         )
       ],
     );
