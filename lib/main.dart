@@ -94,6 +94,13 @@ class ListPage extends StatelessWidget {
   }
 }
 
+class AttractionCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
 class Attraction {
   String? imgPath;
   String? name;
