@@ -10,6 +10,11 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // delay and navigate to List page
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => ListPage()));
+    });
     return Stack(
       children: [
         Container(
@@ -31,6 +36,20 @@ class SplashPage extends StatelessWidget {
           ),
         )
       ],
+    );
+  }
+}
+
+// Another landing page after splash
+class ListPage extends StatelessWidget {
+  const ListPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Welcome Home'),
+      ),
     );
   }
 }
