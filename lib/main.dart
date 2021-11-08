@@ -37,6 +37,16 @@ final List<Attraction> attractionsList = [
       location: 'Tallaboa, PR'),
 ];
 
+// bottom bar list
+final List<BottomBarItem> barItemsList = [
+  BottomBarItem(label: 'Home', isSelected: true, icon: Icons.home),
+  BottomBarItem(label: 'Account', isSelected: false, icon: Icons.person),
+  BottomBarItem(
+      label: 'Bookings', isSelected: false, icon: Icons.pending_actions),
+  BottomBarItem(label: 'Payments', isSelected: false, icon: Icons.payments),
+  BottomBarItem(label: 'More', isSelected: false, icon: Icons.more_horiz),
+];
+
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashPage()));
 }
@@ -285,6 +295,7 @@ class BottomBarWidget extends StatefulWidget {
 }
 
 class _BottomBarWidgetState extends State<BottomBarWidget> {
+  List<BottomBarItem> barItems = barItemsList;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -321,6 +332,15 @@ class RatingWidget extends StatelessWidget {
       ],
     );
   }
+}
+
+// bottom bar model
+
+class BottomBarItem {
+  String? label;
+  bool? isSelected;
+  IconData? icon;
+  BottomBarItem({this.label, this.isSelected, this.icon});
 }
 
 class Attraction {
