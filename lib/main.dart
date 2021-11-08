@@ -151,7 +151,29 @@ class AttractionCard extends StatelessWidget {
                       fit: BoxFit.cover),
                 ),
               ),
-              Container(),
+              Container(
+                height: 150,
+                padding: EdgeInsets.all(20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          attraction!.name!,
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: [],
+                    ),
+                  ],
+                ),
+              ),
             ],
           )
         ],
