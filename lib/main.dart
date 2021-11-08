@@ -218,6 +218,16 @@ class RatingWidget extends StatelessWidget {
               color: Colors.yellow,
             );
           }),
+        ),
+        SizedBox(
+          width: 5,
+        ),
+        Text(
+          '${this.rating!}/5 Reviews',
+          style: TextStyle(
+            fontSize: 12,
+            color: Colors.grey.withOpacity(0.7),
+          ),
         )
       ],
     );
