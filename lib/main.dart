@@ -158,6 +158,7 @@ class AttractionCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           attraction!.name!,
@@ -165,6 +166,9 @@ class AttractionCard extends StatelessWidget {
                               color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          width: 5,
                         ),
                         Row(
                           children: [
@@ -184,6 +188,9 @@ class AttractionCard extends StatelessWidget {
                                   color: Colors.grey.withOpacity(0.7)),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          width: 5,
                         ),
                         RatingWidget(
                           rating: attraction!.rating!,
