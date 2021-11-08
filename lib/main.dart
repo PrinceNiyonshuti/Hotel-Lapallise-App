@@ -165,6 +165,15 @@ class AttractionCard extends StatelessWidget {
                               color: Colors.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold),
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.pin_drop,
+                              color: Colors.grey.withOpacity(0.7),
+                              size: 13,
+                            )
+                          ],
                         )
                       ],
                     ),
