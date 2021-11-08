@@ -95,6 +95,8 @@ class ListPage extends StatelessWidget {
 }
 
 class AttractionCard extends StatelessWidget {
+  Attraction? attraction;
+  AttractionCard({this.attraction});
   @override
   Widget build(BuildContext context) {
     return Container();
