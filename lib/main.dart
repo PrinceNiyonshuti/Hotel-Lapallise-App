@@ -209,6 +209,9 @@ class AttractionCard extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text(
                           'Per Night',
                           style: TextStyle(
@@ -223,6 +226,25 @@ class AttractionCard extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Container(
+            child: Icon(
+              Icons.favorite,
+              color: Colors.white,
+              size: 16,
+            ),
+            margin: EdgeInsets.only(right: 10),
+            width: 40,
+            height: 40,
+            decoration: BoxDecoration(
+                color: mainThemeColor,
+                borderRadius: BorderRadius.circular(40),
+                boxShadow: [
+                  BoxShadow(
+                      blurRadius: 10,
+                      color: mainThemeColor.withOpacity(0.5),
+                      offset: Offset.zero)
+                ]),
           )
         ],
       ),
