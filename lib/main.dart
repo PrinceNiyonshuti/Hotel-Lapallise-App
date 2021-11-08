@@ -172,6 +172,16 @@ class AttractionCard extends StatelessWidget {
                               Icons.pin_drop,
                               color: Colors.grey.withOpacity(0.7),
                               size: 13,
+                            ),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Text(
+                              attraction!.location!,
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey.withOpacity(0.7)),
                             )
                           ],
                         )
