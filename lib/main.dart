@@ -198,7 +198,26 @@ class AttractionCard extends StatelessWidget {
                       ],
                     ),
                     Column(
-                      children: [],
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          '\$${attraction!.price!.toStringAsFixed(2)}',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'Per Night',
+                          style: TextStyle(
+                            color: Colors.grey.withOpacity(0.7),
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
