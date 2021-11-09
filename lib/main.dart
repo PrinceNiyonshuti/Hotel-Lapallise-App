@@ -299,7 +299,30 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Bottom Bar'),
+      padding: EdgeInsets.only(
+        top: 20,
+        left: 20,
+        right: 20,
+        bottom: 15,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: List.generate(barItems.length, (index) {
+          var barItem = barItems[index];
+          return Column(
+            children: [
+              Icon(barItem.icon,
+                  color: barItem.isSelected! ? mainThemeColor : Colors.grey),
+              Text(
+                barItem.label!,
+                style: TextStyle(
+                    color: (barItem.isSelected! ? mainThemeColor : Colors.grey),
+                    fontSize: 11),
+              )
+            ],
+          );
+        }),
+      ),
     );
   }
 }
