@@ -68,6 +68,20 @@ class LandingPage extends StatelessWidget {
         ),
         Container(
           color: mainThemeColor.withOpacity(0.7),
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Paradise',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30),
+            )
+          ],
         )
       ],
     ));
