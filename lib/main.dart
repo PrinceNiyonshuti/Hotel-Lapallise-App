@@ -48,7 +48,18 @@ final List<BottomBarItem> barItemsList = [
 ];
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashPage()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: LandingPage()));
+}
+
+// The landing page
+class LandingPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Stack(
+      children: [],
+    ));
+  }
 }
 
 class SplashPage extends StatelessWidget {
