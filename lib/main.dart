@@ -57,7 +57,16 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Stack(
-      children: [],
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: NetworkImage(
+                    'https://cf.bstatic.com/xdata/images/hotel/max1024x768/275162028.jpg?k=38b638c8ec9ec86624f9a598482e95fa634d49aa3f99da1838cf5adde1a14521&o=&hp=1'),
+                fit: BoxFit.cover),
+          ),
+        )
+      ],
     ));
   }
 }
