@@ -62,7 +62,7 @@ class LandingPage extends StatelessWidget {
           decoration: BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    'https://cf.bstatic.com/xdata/images/hotel/max1024x768/275162028.jpg?k=38b638c8ec9ec86624f9a598482e95fa634d49aa3f99da1838cf5adde1a14521&o=&hp=1'),
+                    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/02/8b/39/hotel-swimming-pool-when.jpg?w=1200&h=-1&s=1'),
                 fit: BoxFit.cover),
           ),
         ),
@@ -74,12 +74,20 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Paradise',
+              'La Palisse',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 30),
+                  fontSize: 40),
+            ),
+            SizedBox(
+              height: 60,
+            ),
+            Icon(
+              Icons.pool,
+              color: Colors.white,
+              size: 80,
             )
           ],
         )
