@@ -74,7 +74,7 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'La Palisse',
+              'La Palisse Hotel',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.white,
@@ -88,6 +88,28 @@ class LandingPage extends StatelessWidget {
               Icons.pool,
               color: Colors.white,
               size: 80,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text("Choose location to".toUpperCase(),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.5),
+                )),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              "Find a Hotel",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 20,
             )
           ],
         )
