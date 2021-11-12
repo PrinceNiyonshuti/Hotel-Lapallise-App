@@ -110,11 +110,38 @@ class LandingPage extends StatelessWidget {
             ),
             SizedBox(
               height: 20,
-            )
+            ),
+            LandingSearchBar()
           ],
         )
       ],
     ));
+  }
+}
+
+// Landing Search Bar
+class LandingSearchBar extends StatelessWidget {
+  const LandingSearchBar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: 30, right: 30),
+      padding: EdgeInsets.only(top: 5, bottom: 5, left: 20, right: 5),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(50),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'Search Room',
+            style: TextStyle(color: Colors.grey),
+          ),
+        ],
+      ),
+    );
   }
 }
 
