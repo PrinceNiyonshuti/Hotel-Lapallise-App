@@ -56,7 +56,17 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: Container(
+            padding: EdgeInsets.all(20),
+            alignment: Alignment.bottomLeft,
+            child: Icon(
+              Icons.pool,
+              color: mainThemeColor,
+              size: 80,
+            ),
+          ),
+        ),
         body: Stack(
           children: [
             Container(
