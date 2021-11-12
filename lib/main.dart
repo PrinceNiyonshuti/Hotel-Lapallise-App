@@ -56,66 +56,72 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: Drawer(),
         body: Stack(
-      children: [
-        Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: NetworkImage(
-                    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/02/8b/39/hotel-swimming-pool-when.jpg?w=1200&h=-1&s=1'),
-                fit: BoxFit.cover),
-          ),
-        ),
-        Container(
-          color: mainThemeColor.withOpacity(0.7),
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
-              'La Palisse Hotel',
-              textAlign: TextAlign.center,
-              style: TextStyle(
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage(
+                        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/02/8b/39/hotel-swimming-pool-when.jpg?w=1200&h=-1&s=1'),
+                    fit: BoxFit.cover),
+              ),
+            ),
+            Container(
+              color: mainThemeColor.withOpacity(0.7),
+            ),
+            AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              iconTheme: IconThemeData(color: Colors.white),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  'La Palisse Hotel',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40),
+                ),
+                SizedBox(
+                  height: 60,
+                ),
+                Icon(
+                  Icons.pool,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40),
-            ),
-            SizedBox(
-              height: 60,
-            ),
-            Icon(
-              Icons.pool,
-              color: Colors.white,
-              size: 80,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text("Choose location to".toUpperCase(),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.5),
-                )),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              "Find a Hotel",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            LandingSearchBar()
+                  size: 80,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("Choose location to".toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.5),
+                    )),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  "Find a Hotel",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                LandingSearchBar()
+              ],
+            )
           ],
-        )
-      ],
-    ));
+        ));
   }
 }
 
