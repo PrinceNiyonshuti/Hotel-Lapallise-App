@@ -48,7 +48,7 @@ final List<BottomBarItem> barItemsList = [
 ];
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: LandingPage()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashPage()));
 }
 
 // The landing page
@@ -187,7 +187,7 @@ class SplashPage extends StatelessWidget {
     // delay and navigate to List page
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => ListPage()));
+          .push(MaterialPageRoute(builder: (context) => LandingPage()));
     });
     return Stack(
       children: [
