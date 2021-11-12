@@ -139,6 +139,17 @@ class LandingSearchBar extends StatelessWidget {
             'Search Room',
             style: TextStyle(color: Colors.grey),
           ),
+          Container(
+            width: 30,
+            height: 30,
+            child: Icon(
+              Icons.search,
+              color: Colors.white,
+              size: 15,
+            ),
+            decoration: BoxDecoration(
+                color: mainThemeColor, borderRadius: BorderRadius.circular(25)),
+          )
         ],
       ),
     );
