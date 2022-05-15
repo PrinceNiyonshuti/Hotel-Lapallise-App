@@ -1,6 +1,6 @@
-# hotel_1
+# Hotel Lapallise App
 
-A new Flutter project.
+
 
 ## Getting Started
 
